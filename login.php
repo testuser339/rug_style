@@ -8,7 +8,7 @@ if(isset($_POST['submit']))
 $name=$_POST['fullname'];
 $email=$_POST['emailid'];
 $contactno=$_POST['contactno'];
-$password=md5($_POST['password']);
+$password=$_POST['password'];
 $query=mysqli_query($con,"insert into users(name,email,contactno,password) values('$name','$email','$contactno','$password')");
 if($query)
 {

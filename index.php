@@ -169,8 +169,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 			   <h3 class="new-product-title pull-left">Featured Products</h3>
 				<ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
 					<li class="active"><a href="#all" data-toggle="tab">All</a></li>
-                                         <li class="active"><a href="#all" data-toggle="tab">Large carpet</a></li>
-                                          <li class="active"><a href="#all" data-toggle="tab">Door Mats</a></li>
+                                         
                                           
 					
 				</ul><!-- /.nav-tabs -->
@@ -361,7 +360,7 @@ while ($row=mysqli_fetch_array($ret))
 	                   	<div class="owl-carousel homepage-owl-carousel custom-carousel outer-top-xs owl-theme" data-item="2">
 	   
 <?php
-$ret=mysqli_query($con,"select * from products where category=3 and subCategory=13");
+$ret=mysqli_query($con,"select * from products where category=3 and subCategory=47");
 while ($row=mysqli_fetch_array($ret)) 
 {
 ?>
@@ -408,10 +407,10 @@ while ($row=mysqli_fetch_array($ret))
 					</div>
 					<div class="col-md-6">
 						<section class="section">
-							<h3 class="section-title">Laptops</h3>
+							<h3 class="section-title">Woolen Rugs</h3>
 		                   	<div class="owl-carousel homepage-owl-carousel custom-carousel outer-top-xs owl-theme" data-item="2">
 	<?php
-$ret=mysqli_query($con,"select * from products where category=4 and subCategory=6");
+$ret=mysqli_query($con,"select * from products where category=7 and subCategory=48");
 while ($row=mysqli_fetch_array($ret)) 
 {
 ?>
@@ -465,10 +464,10 @@ while ($row=mysqli_fetch_array($ret))
 		
 
 	<section class="section featured-product inner-xs wow fadeInUp">
-		<h3 class="section-title">Fashion</h3>
+		<h3 class="section-title">Kilim Rugs</h3>
 		<div class="owl-carousel best-seller custom-carousel owl-theme outer-top-xs">
 			<?php
-$ret=mysqli_query($con,"select * from products where category=6");
+$ret=mysqli_query($con,"select * from products where category=5 and subcategory=49");
 while ($row=mysqli_fetch_array($ret)) 
 {
 	# code...
